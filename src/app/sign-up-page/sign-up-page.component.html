@@ -1,0 +1,9 @@
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<input type="text" class="form-control" name="name_kanji" [(ngModel)]="name_kanji"><br>
+<input type="text" [value]="name_kanji" class="form-control" [class.validation]="kana_validation" (change)="0"><br>
+<button type="button" class="btn btn-primary" (click)="signUp()">submit</button>
